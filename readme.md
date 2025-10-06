@@ -22,32 +22,63 @@
 
 1. کپی کانفیگ‌ها در مسیر:
 
-```bash
+```
 sudo mkdir -p /etc/wireguard/extreme_configs
-sudo cp your-configs/*.conf /etc/wireguard/extreme_configs/
+```
+
+2-کانفیگ های وایرگارد رو درون فولدر
+```
+/etc/wireguard/extreme_configs
+```
+
+کپی بزنید
+
+
+
+```
 sudo chmod 700 /etc/wireguard/extreme_configs
+```
 
 
 اجازه اجرای اسکریپت:
 
+```
 chmod +x extreme_vpn.sh
+```
 
 اجرا ▶️
-sudo ./extreme_vpn.sh
 
+
+```
+sudo ./extreme_vpn.sh
+```
 
 گزینه‌ها:
 
---silent : اجرای بی‌صدا
+```
+sudo ./extreme_vpn.sh --silent
+```
+: اجرای بی‌صدا
 
---help : نمایش راهنما
 
+```
+sudo ./extreme_vpn.sh --help
+```
+
+: نمایش راهنما
+
+
+----
 مسیرهای مهم 🗂️
-آیتم	مسیر
+
+
 کانفیگ‌ها	/etc/wireguard/extreme_configs
 فایل لاگ	/var/log/extreme_vpn.log
-فایل تست سرعت	/tmp/speedtest.tmp
+
+ف
+ایل تست سرعت	/tmp/speedtest.tmp
 اینترفیس VPN	wg-extreme
+
 نکات مهم ⚠️
 
 کانفیگ‌ها باید با فرمت .conf باشند
